@@ -15,7 +15,6 @@ def sushi_for_two(arr):
     vals = list(hash_map.values())
     return max(vals[0]) * 2
 
-
 if __name__ == '__main__':
     n = int(input())
     arr = list(map(int, input().split()))
