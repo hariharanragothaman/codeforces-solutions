@@ -34,7 +34,6 @@ def get_distance_optimized(arr):
         pivot = arr[n//2]
     else:
         pivot = arr[n//2]
-    print("The pivot is:", pivot)
     pivot_sum = sum(abs(pivot - c) for c in arr)
     print(pivot_sum)
 

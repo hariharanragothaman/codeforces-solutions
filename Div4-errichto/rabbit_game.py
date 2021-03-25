@@ -25,9 +25,6 @@ def find_how_many_can_eat(arr):
     return fcnt + scnt
 
 
-
-
-
 if __name__ == '__main__':
     n = int(input())
     arr = list(map(int, input().split()))
