@@ -14,7 +14,6 @@ def will_the_rabbits_meet(x, y, a, b):
     left, right = 0, 10**18
     while left < right:
         mid = left + right + 1 >> 1
-        print("The mid value is:", mid)
         if x + a * mid <= y - b * mid:
             left = mid
         else:
