@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 alpha = [chr(c) for c in range(ord('a'), ord('z') + 1)]
-
+print(alpha)
 
 def string_equality(s1, s2, k):
     s1_map = defaultdict(int)
@@ -18,6 +18,8 @@ def string_equality(s1, s2, k):
             s1_map[c] -= k
             s1_map[chr(ord(c)+1)] += k
 
+
+    print(s1_map, s2_map)
     for c in list(s1_map) + list(s2_map):
         if s1_map[c] != s2_map[c]:
             print('No')
