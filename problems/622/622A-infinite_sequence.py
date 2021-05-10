@@ -1,5 +1,6 @@
 from math import ceil, sqrt
 
+
 def find_position(n):
     """
     1 1 1
@@ -30,12 +31,13 @@ def find_position(n):
     diff = pos - n
     return c - diff
     """
-    for i in range(1, 2*(10**14)+1):
-        if (i*(i+1)//2) >= n:
-            res = (i * (i+1) // 2 ) - n
+    for i in range(1, 2 * (10 ** 14) + 1):
+        if (i * (i + 1) // 2) >= n:
+            res = (i * (i + 1) // 2) - n
             return i - res
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     n = int(input())
     # To find the number of on the nth position
     res = find_position(n)
