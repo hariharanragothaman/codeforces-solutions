@@ -94,6 +94,6 @@ for R = 0..n-1
         remove(a[L])
         L++
 
-To solve such problems, you need to implement three functions: add, remove, and good. 
+To solve such contests, you need to implement three functions: add, remove, and good. 
 
 """
